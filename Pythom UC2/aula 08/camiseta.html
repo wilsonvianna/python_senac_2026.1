@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T-shirt Minimalista - Apresentação</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .produto-card {
+      background: #ffffff;
+      display: flex;
+      flex-direction: row;
+      max-width: 800px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .produto-imagem {
+      flex: 1;
+      background: #eaeaea;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .produto-imagem img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .produto-info {
+      flex: 1;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .produto-titulo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #111;
+      margin-bottom: 10px;
+    }
+
+    .produto-preco {
+      font-size: 20px;
+      color: #2563eb;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .produto-descricao {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .tamanhos {
+      margin-bottom: 20px;
+    }
+
+    .tamanhos span {
+      display: inline-block;
+      border: 1px solid #ccc;
+      padding: 8px 14px;
+      margin-right: 8px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .tamanhos span:hover {
+      border-color: #2563eb;
+      color: #2563eb;
+    }
+
+    .btn-comprar {
+      background-color: #2563eb;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .btn-comprar:hover {
+      background-color: #1d4ed8;
+    }
+
+    @media (max-width: 600px) {
+      .produto-card {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="produto-card">
+    <div class="produto-imagem">
+      <!-- Substitua o link abaixo pela foto da sua T-shirt -->
+      <img src="https://placeholder.com" alt="Camiseta T-shirt Branca">
+    </div>
+
+    <div class="produto-info">
+      <div>
+        <h1 class="produto-titulo">T-shirt Básica Algodão</h1>
+        <div class="produto-preco">R$ 79,90</div>
+        <p class="produto-descricao">
+          Camiseta 100% algodão penteado, toque macio, modelagem moderna e caimento perfeito para o seu dia a dia.
+        </p>
+
+        <div class="tamanhos">
+          <p style="font-size: 12px; color: #777; margin-bottom: 6px;">ESCOLHA O TAMANHO:</p>
+          <span>P</span>
+          <span>M</span>
+          <span>G</span>
+          <span>GG</span>
+        </div>
+      </div>
+
+      <a href="#" class="btn-comprar">Adicionar ao Carrinho</a>
